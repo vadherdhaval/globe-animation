@@ -118,9 +118,9 @@ function GlobeDisplay(data,lines,map){
 }
 
 function onWindowResize(){
-    init();
-    initGlobe();
-    animate();
+    // init();
+    // initGlobe();
+    // animate();
 }
 
 function animate(){
