@@ -1,0 +1,27 @@
+{
+    "type": "PullRequest",
+    "pulls": [
+        {
+            "type": "pull",
+            "order": 1,
+            "from": "IND",
+            "to": "BRA",
+            "startLat": [13.135082],
+            "startLng": [80.222655],
+            "endLat": [-15.793889],
+            "endLng": [-47.882778],
+            "arcAlt": 0.5
+        },
+        {
+            "type": "pull",
+            "order": 1,
+            "from": "IND",
+            "to": "USA",
+            "startLat": [28.7041],
+            "startLng": [77.1025],
+            "endLat": [32.731631],
+            "endLng": [-117.131187],
+            "arcAlt": 0.5
+        }
+    ]
+}

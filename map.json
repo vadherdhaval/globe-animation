@@ -1,0 +1,37 @@
+{
+    "type": "Map",
+    "coordinates": [
+        {
+            "text":"IND",
+            "size": 1.0,
+            "country": "India",
+            "city": "",
+            "lat": [13.135082],
+            "lng": [80.222655]
+        },
+        {
+            "text":"BRA",
+            "size": 1.0,
+            "country": "Brazil",
+            "city": "",
+            "lat": [-15.793889],
+            "lng": [-47.882778]
+        },
+        {
+            "text":"IND",
+            "size": 1.0,
+            "country": "India",
+            "city": "",
+            "lat": [28.7041],
+            "lng": [77.1025]
+        },
+        {
+            "text":"USA",
+            "size": 1.0,
+            "country": "United States of America",
+            "city": "",
+            "lat": [32.731631],
+            "lng": [-117.131187]
+        }
+    ]
+}
