@@ -50,6 +50,7 @@ function init(){
     controls = new OrbitControls(camera,render.domElement);
     controls.enablePan = false;
     controls.enableZoom = false;
+    controls.enableRotate = window.innerWidth < 992 ? false : true;
     controls.rotateSpeed = 0.8;
     controls.autoRotate = true;
 }
