@@ -178,6 +178,9 @@ html, body {
   .glider-slide .content-wrapper .content{
     padding: 20px 20px 0;
   }
+  .canvas{
+    pointer-events: none;
+  }
 }
 @media screen and (max-width: 560px) {
   .canvas {
