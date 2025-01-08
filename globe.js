@@ -8,7 +8,9 @@ const globeContainer = document.querySelector('.payment-ecosystem-wrapper');
 const fov = window.innerWidth < 560 ? 20 : 45;
 
 window.addEventListener('resize',onWindowResize,false);
-onWindowResize();
+init();
+initGlobe();
+animate();
 
 function init(){
     size = {
