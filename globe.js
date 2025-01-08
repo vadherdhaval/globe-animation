@@ -7,7 +7,6 @@ let render,camera, scene, controls, Globe, size;
 const globeContainer = document.querySelector('.payment-ecosystem-wrapper');
 const fov = window.innerWidth < 560 ? 20 : 45;
 
-window.addEventListener('resize',onWindowResize,false);
 init();
 initGlobe();
 animate();
