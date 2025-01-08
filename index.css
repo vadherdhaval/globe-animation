@@ -18,7 +18,7 @@ html, body {
   position: relative;
   min-height: 800px;
   width: 100%;
-  
+  z-index: 100;
   overflow: hidden;
   padding: 78px 0 78px 78px;
 }
