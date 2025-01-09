@@ -28,6 +28,7 @@ html, body {
   height: calc(100% - 156px);
   top: 78px;
   right: 0;
+  overflow: hidden;
 }
 .payment-ecosystem-wrapper .text-content{
   position: relative;
@@ -63,7 +64,7 @@ html, body {
   height: 800px;
   position: absolute;
   top: 50%;
-  right: -20%;
+  right: -30%;
   transform: translateY(-50%);
 }
 
@@ -146,6 +147,11 @@ html, body {
   bottom: 0;
   max-height: 350px;
 }
+@media screen and (max-width: 1199px) {
+  .canvas{
+    opacity: 0.5;
+  }
+}
 @media screen and (max-width: 991px) {
   .payment-ecosystem-wrapper{
     padding: 40px 20px;
@@ -163,6 +169,7 @@ html, body {
     right: auto;
     left: 35%;
     transform: none;
+    opacity: 0.5;
   }
 }
 @media screen and (max-width:767px) {
@@ -173,13 +180,14 @@ html, body {
     padding-left: 12px;
   }
   .glider-slide{
-    margin: 0 12px;
+    margin: 0 8px;
   }
   .glider-slide .content-wrapper .content{
     padding: 20px 20px 0;
   }
   .canvas{
     pointer-events: none;
+    opacity: 0.3;
   }
 }
 @media screen and (max-width: 560px) {

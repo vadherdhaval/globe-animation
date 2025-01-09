@@ -36,8 +36,20 @@ window.addEventListener('load',function(){
                 }
             },
             {
-                breakpoint: 500,
+                breakpoint: 400,
                 settings: {
+                    itemWidth: 356,
+                    exactWidth: true,
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                    scrollLock: true
+                }
+            },
+            {
+                breakpoint: 300,
+                settings: {
+                    itemWidth: 326,
+                    exactWidth: true,
                     slidesToScroll: 1,
                     slidesToShow: 1,
                     scrollLock: true

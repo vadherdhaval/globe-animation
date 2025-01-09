@@ -13,12 +13,12 @@ animate();
 
 function init(){
     size = {
-        width: window.innerWidth < 767 ? window.innerWidth * 2.5 : window.innerWidth < 992 ? window.innerWidth : globeContainer.offsetWidth / 1.3,
+        width: window.innerWidth < 767 ? window.innerWidth * 2.5 : window.innerWidth < 992 ? window.innerWidth : window.innerWidth < 1200 ? globeContainer.offsetWidth : globeContainer.offsetWidth - 50,
         height: window.innerWidth < 767 ? globeContainer.offsetHeight : 
                 window.innerWidth < 992 ? globeContainer.offsetHeight : 
-                window.innerWidth < 1200 && globeContainer.offsetHeight > window.innerHeight ? window.innerHeight : 
+                window.innerWidth < 1200 && globeContainer.offsetHeight > window.innerHeight ? globeContainer.offsetHeight + 100 : 
                 window.innerWidth < 1200 && globeContainer.offsetHeight < window.innerHeight ? globeContainer.offsetHeight :
-                globeContainer.offsetHeight - 100 ,
+                globeContainer.offsetHeight + 20 ,
         zPosition: window.innerWidth < 767 ? 900 : window.innerWidth < 992 ? 400 : window.innerWidth < 1200 ? 350 : 280
     }
 
@@ -49,11 +49,13 @@ function init(){
     scene.add(camera);
 
     controls = new OrbitControls(camera,render.domElement);
+    console.log(controls)
     controls.enablePan = false;
     controls.enableZoom = false;
     controls.enableRotate = window.innerWidth < 992 ? false : true;
-    controls.rotateSpeed = 0.8;
+    controls.rotateSpeed = 0.2;
     controls.autoRotate = true;
+    controls.autoRotateSpeed = 1.2;
 }
 
 async function initGlobe(){
