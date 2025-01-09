@@ -13,12 +13,13 @@ animate();
 
 function init(){
     size = {
-        width: window.innerWidth < 767 ? window.innerWidth * 2.5 : window.innerWidth < 992 ? window.innerWidth : window.innerWidth < 1200 ? globeContainer.offsetWidth : globeContainer.offsetWidth - 50,
+        width: window.innerWidth < 767 ? window.innerWidth * 2.5 : window.innerWidth < 992 ? window.innerWidth : window.innerWidth < 1200 ? globeContainer.offsetWidth : window.innerWidth < 1400 ? globeContainer.offsetWidth - 80 : globeContainer.offsetWidth - 20,
         height: window.innerWidth < 767 ? globeContainer.offsetHeight : 
                 window.innerWidth < 992 ? globeContainer.offsetHeight : 
                 window.innerWidth < 1200 && globeContainer.offsetHeight > window.innerHeight ? globeContainer.offsetHeight + 100 : 
                 window.innerWidth < 1200 && globeContainer.offsetHeight < window.innerHeight ? globeContainer.offsetHeight :
-                globeContainer.offsetHeight + 20 ,
+                window.innerWidth < 1400 ? globeContainer.offsetHeight + 120 : 
+                globeContainer.offsetHeight + 100 ,
         zPosition: window.innerWidth < 767 ? 900 : window.innerWidth < 992 ? 400 : window.innerWidth < 1200 ? 350 : 280
     }
 

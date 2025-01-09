@@ -28,7 +28,7 @@ html, body {
   height: calc(100% - 156px);
   top: 78px;
   right: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .payment-ecosystem-wrapper .text-content{
   position: relative;
@@ -64,7 +64,7 @@ html, body {
   height: 800px;
   position: absolute;
   top: 50%;
-  right: -30%;
+  right: -32%;
   transform: translateY(-50%);
 }
 
@@ -146,6 +146,11 @@ html, body {
   width: 100%;
   bottom: 0;
   max-height: 350px;
+}
+@media screen and (max-width: 1400px) {
+  .canvas{
+    right: -35%;
+  }
 }
 @media screen and (max-width: 1199px) {
   .canvas{
